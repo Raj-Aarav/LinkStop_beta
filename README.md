@@ -1,5 +1,3 @@
-Here's a README file draft for your GitHub repository for LinkStop:
-
 ---
 
 # **LinkStop**
