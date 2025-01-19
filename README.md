@@ -9,8 +9,6 @@ LinkStop is a cybersecurity project designed to identify and mitigate threats po
 ## **Table of Contents**
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
 5. [Project Breakdown](#project-breakdown)
 6. [References](#references)
 
@@ -62,5 +60,3 @@ Developed under the guidance of **Dr. Shridhar Sanshi**, this project is a step 
 - S. Marchal, J. Francois, R. State, T. Engel, “Detecting malicious web links and identifying their attack types,” [ResearchGate, 2014](https://www.researchgate.net/publication/262176602_Detecting_malicious_web_links_and_identifying_their_attack_types).
 
 ---
-
-Feel free to suggest modifications or additional sections for this README!
