@@ -47,7 +47,7 @@ def preprocess_for_training_with_scaling(dataset):
 
 
 
-dataset = pd.read_csv('./data.csv')
+dataset = pd.read_csv('./Dataset/data.csv')
 scaler, tld_counts = preprocess_for_training_with_scaling(dataset)
 joblib.dump(scaler,"scaler.joblib")
 joblib.dump(tld_counts,"tld_counts.joblib")

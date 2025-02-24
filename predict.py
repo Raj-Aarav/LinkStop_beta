@@ -62,11 +62,11 @@ class NNModel(nn.Module):
 device = torch.device('cpu')
 input_size = 11 
 model = NNModel(input_size)
-model.load_state_dict(torch.load('./model.pth', map_location=device, weights_only=True))
+model.load_state_dict(torch.load('./Models/model.pth', map_location=device, weights_only=True))
 model.eval()
 
-scaler = joblib.load('scaler.joblib')
-tld_counts = joblib.load('tld_counts.joblib')
+scaler = joblib.load('./Models/scaler.joblib')
+tld_counts = joblib.load('./Models/tld_counts.joblib')
 
 def classify_url(url):
     try:
@@ -81,11 +81,11 @@ def classify_url(url):
 
 # Example usage
 test_url = "https://github.com/Raj-Aarav/LinkStop_beta/blob/main/preprocessing.py"
-mal_url = "https://g00gle.tt/@=??"
-probability, label = classify_url(test_url)
+mal_url = "https://g00gle.tt/@=??<script>alert('give password')</script>@=&??Name$$"
+probability, label = classify_url(mal_url)
 
 print('\n-------------------------------------------------\n')
-print(f"URL: {test_url}")
+print(f"URL: {mal_url}")
 print('\n-------------------------------------------------\n')
 print(f"Predicted Probability: {probability:.4f}")
 print(f"Predicted Label: {'Non-Malicious' if label == 1 else 'Malicious'}")
